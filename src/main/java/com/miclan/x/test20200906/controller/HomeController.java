@@ -17,11 +17,7 @@ public class HomeController {
 
     @GetMapping("/heavy")
     public List<String> getHeavy() {
-        return Stream.iterate(1, i->i+1).limit(100)
-        .map(value -> "hello " + value)
-        .collect(Collectors.toList());
-
-        // return "hello world.";
+        return Stream.iterate(1, i -> i + 1).limit(100).map(value -> "hello " + value).collect(Collectors.toList());
     }
 
 }
