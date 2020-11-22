@@ -34,23 +34,19 @@ public class HeavyController {
         CompletableFuture<String> cf3 = asyncService.getString1("3");
         CompletableFuture<String> cf4 = asyncService.getString1("4");
         CompletableFuture<String> cf5 = asyncService.getString1("5");
-        
-        // CompletableFuture.allOf(cf1, cf2, cf3).join();
+        CompletableFuture<String> cf6 = asyncService.getString1("6");
 
         System.out.println("-----");
-        // return Lists.newArrayList(cf1.get(), cf2.get(), cf3.get(), cf4.get(), cf5.get());
 
         String s1 = cf1.get();
         String s2 = cf2.get();
         String s3 = cf3.get();
         String s4 = cf4.get();
         String s5 = cf5.get();
+        String s6 = cf6.get();
 
-        System.out.println(s1 + s2 + s3 + s4 + s5);
+        System.out.println(s1 + s2 + s3 + s4 + s5 + s6);
 
         return null;
     }
-
-    
-
 }
