@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import avro.shaded.com.google.common.collect.Lists;
-
 @RestController
 @RequestMapping("/heavy")
 public class HeavyController {
