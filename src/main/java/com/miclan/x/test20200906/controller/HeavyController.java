@@ -17,6 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/heavy")
 public class HeavyController {
 
+    /**
+     * An async service for test
+     * 
+     */
     @Autowired
     private AsyncService asyncService;
 
@@ -44,6 +48,12 @@ public class HeavyController {
         String s4 = cf4.get();
         String s5 = cf5.get();
         String s6 = cf6.get();
+
+        System.out.println(s1 + s2 + s3 + s4 + s5 + s6);
+
+        System.out.println(s1 + s2 + s3 + s4 + s5 + s6);
+
+        System.out.println(s1 + s2 + s3 + s4 + s5 + s6);
 
         System.out.println(s1 + s2 + s3 + s4 + s5 + s6);
 
